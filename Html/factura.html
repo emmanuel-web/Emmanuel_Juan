@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="../estilo/footer.css">
+    <link rel="stylesheet" href="../estilo/estilofactura (1).css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="../imagen/icono.jpg" width="40" >
+           Restaurante</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="../Html/inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Html/menu (2).html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Html/contactanos.html">Concatanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Html/factura.html">factura</a>
+            </li>
+           
+
+          </ul>
+        
+
+          </div>
+        </nav>
+<div class="container-fluid  bg-info ">
+     <p class="text-center text-white" id="usuario"></p>
+</div>
+<div class="color">
+    
+    <a class="navbar-brand" href="#">Nueva factura</a>
+
+    <h5 class="text-center font-weight-bold py-4 mb-2">Datos del cliente</h5>
+    <div class="form-row">
+        <div class="col-sm-6 form-group">
+            <label for="txtNombre" class="form-label">Nombre :</label>
+            <input type="text" class="form-control" id="txtNombre" placeholder="Agregar nombre">
+        </div>
+    
+        <div class="col-sm-6 form-group">
+            <label for="txtApellidos" class="form-label">Apellidos :</label>
+            <input type="text" class="form-control" id="txtApellidos" placeholder="Digite apellidos">
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="form-row">
+        <div class="col-sm-8 col-lg-10 form-group">
+            <label for="txtDireccion" class="form-label">Direccion :</label>
+            <input type="text" class="form-control" id="txtDireccion" placeholder="Agregar su direccion">
+        </div>
+
+        <div class="col-sm-4 col-lg-2 form-group">
+            <label for="txtID" class="form-label">ID :</label>
+            <input type="number" class="form-control" id="txtID" placeholder="Digite su documento ">
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="form-row">
+        <div class="col-md-7 col-lg-6 form-group">
+            <label for="txtTelefono" class="form-label">Telefono :</label>
+            <input type="text" class="form-control" id="txtTelefono" placeholder="Digite su telefono">
+        
+        </div>
+        <div class="col-sm-5 col-md-2 col-lg-3 form-group">
+            <label for="txtEdad" class="form-label">Edad :</label>
+            <input type="text" class="form-control" id="txtEdad" placeholder="Agregue su edad">
+        </div>
+        <div class="col-sm-7 col-md-3 col-lg-3 form-group">
+            <label for="txtNIF" class="form-label">NIF :</label>
+            <input type="text" class="form-control" id="txtNIF" placeholder="Digite si NIF">
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="form-row">
+        <div class="col-sm-8 col-lg-10 form-group">
+            <label for="txtBarrio" class="form-label">Barrio :</label>
+            <input type="text" class="form-control" id="txtBarrio" placeholder="Digite su Barrio">
+        </div>
+    </div>
+
+    <h5 class="text-center font-weight-bold my-3">Menú</h5> 
+    <form>
+            <div class="form-group row">
+                <label for="txtAjiaco" class="col-lg-4 col-form-label">Ajiaco con pollo :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtAjiaco" placeholder="Cuantos quiere?">
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtBandeja" class="col-lg-4 col-form-label">Bandeja Paisa :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtBandeja" placeholder="Cuantos quiere?">
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtPatrasca" class="col-lg-4 col-form-label">Patarasca :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtPatrasca" placeholder="Cuantos quiere?" >
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtSancocho"class="col-lg-4 col-form-label">Sancocho :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtSancocho" placeholder="Cuantos quiere?" >
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtMondongo" class="col-lg-4 col-form-label">Mondongo :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtMondongo" placeholder="Cuantos quiere?" >
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtPlatanos" class="col-lg-4 col-form-label">Platanos rellenos :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtPlatanos" placeholder="Cuantos quiere?">
+                </div>
+            </div>
+    <p></p>
+            <div class="form-group row">
+                <label for="txtPostre" class="col-lg-4 col-form-label">Postre de coco :</label>
+                <div class="col-lg-8">
+                    <input type="number" class="form-control" id="txtPostre" placeholder="Cuantos quiere?" >
+                </div>
+            </div>
+     <p></p>
+     <div class="col-lg-6 text-center">
+
+        <label for="comentario" class="font-weight-bold h5 my-3">Comentario del pedido</label>
+        <textarea name="area_de_texto" class="form-control mb-3 mb-lg-2 mb-xl-0" id="txtcomentario" rows="14"></textarea>
+        
+        <small class="font-italic font-weight-light">Por favor no sobrepasar mas de 1000 caracteres</small>
+
+    </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
+            <div class="col mb-3 mb-sm-0">
+                <input type="submit" id="btnGuardar" class="btn btn-block btn-lg btn-outline-success" value="Enviar" onclick="Procesar()">
+            </div>
+            <div class="col">
+                <button type="reset" class="btn btn-block btn-lg btn-outline-secondary">Borrar</button>
+            </div>
+        </div>
+    </form> 
+        <p></p>
+
+
+</fieldset>
+
+
+
+</div>
+
+<div class="color">
+    <h2>Anteriores pedidos</h2>
+    <table class="tabla" id="tablaclientes">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Direccion</th>
+                <th>ID</th>
+                <th>Telefono</th>
+                <th>Edad</th>
+                <th>NIF</th>
+                <th>Barrio</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+<footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-md-6">
+              <h6 class="text-muted lead">CONTACTO:</h6>
+              <h6 class="text-muted">
+                Cra. 65 #185 - 86 Barrio ketimporta<br>
+                Barranquilla, Atlántico.<br>
+                Teléfono: +57 301 588 9364<br>
+                Correo: elcampo@gmail.com
+              </h6>
+          </div>
+          <div class="col-xs-12 col-md-6">
+          <div class="pull-right">
+          <h6 class="text-muted lead">DIAS QUE ABRIMOS :D</h6>
+                <div class="text-muted">
+                    <a>LUNES, </a>
+                    <a>MARTES, </a>
+                    <a>MIERCOLES, </a>
+                    <a>JUEVES, </a>
+                    <a>VIERNES, </a>
+                    <a>DE 8AM A 8PM</a>
+                </div>
+          </div>
+          <div class="row"> <p class="text-muted small text-right">Juan Vergara Y Emmanuel Garzon, El Campo @2020.<br> Todos los derechos reservados.</p></div>
+      </div>
+    </div>  
+  </div>
+  </footer>
+<script src="../js/facturacion1.js"></script>
+<script src="../js/facturacion2.js"></script>
+<script src="../js/usuario_mos.js"></script>
+
+</body>
+</html>

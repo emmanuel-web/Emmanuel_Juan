@@ -1,0 +1,31 @@
+.border-width {
+    transition: all .25s ease;
+}
+
+.border-width:focus {
+    border-color: cornflowerblue !important;
+    border-width: 0.1rem !important;
+}
+.fa-1rem {
+    font-size: 1.5rem;
+}
+
+.fa-2rem {
+    font-size: 2rem;
+}
+
+.fa-6rem {
+    font-size: 6rem;
+}
+
+.modal-icon {
+    height: 6rem;
+    width: 6rem;
+}
+.bg-blue-gradient {
+    background: linear-gradient(40deg,#45cafc,#303f9f);
+}
+
+.text-blue-gradient {
+    color: linear-gradient(40deg,#45cafc,#303f9f);
+}

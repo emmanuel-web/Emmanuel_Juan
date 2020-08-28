@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    
+    <link rel="stylesheet" href="estilo/estilo_login.css">
+    <script src="../js/jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+     <div class="container">
+        <div class="row text-center login-page">
+	   <div class="col-md-12 login-form">
+	      <form> 
+            <div class="row">
+                <div class="col-md-12 login-form-header">
+                  <img src="imagen/descargar.jpg" alt="">
+                </div>
+            </div>
+            
+
+	         <div class="row">
+		    <div class="col-md-12 login-form-header">
+		       <p class="login-form-font-header"><span>Inicio</span><p>
+		    </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="usuario" id="txtuser" type="text" placeholder="Usuario" required/>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <input name="password" id="txtpassword" type="password" placeholder="Contraseña" required/>
+		   </div>
+      </div>
+      <div class="row">
+		   <div class="col-md-12 login-from-row">
+		      <div class="form-group">
+               <select name="estado" id="estado"></select>
+           </div>
+		   </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-12 login-from-row">
+            <input class="btn btn-primary" type="button" value="Iniciar" onclick="usuarios()">
+		   </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 login-from-row">
+             <input class="btn btn-primary btn-lg btn-block" type="button" value="Ivitado" onclick="invitado()">
+            </div>
+         </div>
+	    </form>
+	</div>
+     </div>
+  </div>
+  <script src="js/selectlogin.js"></script>
+  <script src="js/login.js"></script>
+  
+</body>
+</html>

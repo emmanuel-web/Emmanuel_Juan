@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagen/comida.png" />
+    <title>contactanos</title>
+    
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../estilo/footer.css">
+   
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../imagen/icono.jpg" width="40" >
+       Restaurante</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link " href="../Html/inicio.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Html/menu (2).html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Html/contactanos.html">Concatanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Html/factura.html">factura</a>
+        </li>
+       
+
+      </ul>
+    
+
+      </div>
+    </nav>
+<div class="container-fluid  bg-info ">
+  <p class="text-center text-white" id="usuario"> </p>
+</div>
+  </div>   
+<div class="container">
+    <div class=" bg-primary   col-sm-12 col-md-12 col-lg-12">
+        <center><img src="../imagen/6.png"width="400"   ></center>
+    </div>
+</div>
+<div class="container p-4">
+    <div class="row ">
+        <div class="   col-12 col-sm-10 col-md-10 col-lg-6 col-xl-5">
+         <img src="../imagen/7.png"width="350" height="340" >
+        </div>
+        <div class="   col-0 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+            <label>Nombre</label> <br>
+            <input type="text" id="NOMBRE"><br>
+            <label >Apellido:</label><br>
+            <input type="text" id="Apellido"><br>
+            <label >Nacionalidad:</label><br>
+            <div class="form-group">
+              <select name="estados" id="pais"></select>
+            </div> <br>
+            <label>edad</label><br>
+            <input type="number" id="edad" min="10" max="99"required="required"><br>
+            <label >Sexo:</label><br>
+            <input type="radio" id="sexo" value="hombre" /> Hombre
+            <input type="radio" id="sexo" value="mujer" /> Mujer <br>
+            <label >fecha de nacimient:</label><br>
+            <input type="date" id="naci"><br>
+            
+            <label >Correo electronico:</label><br>
+            <input type="email" id="direccionemail" placeholder="Ej.: usuario@servidor.com" >
+                        
+
+        </div>
+        <div class="   col-0 col-sm-6 col-md-3 col-lg-2 col-xl-3">
+            <label >telefono fijo</label><br>
+            <input type="tel" id="telefono"><br>
+            <label >celular</label><br>
+            <input type="tel" id="celular"><br>
+            <label>No. Identidad</label><br>
+            <input type="tel"id="Identidad"><br>
+            <label>direccion:</label><br>
+            <input type="tel" id="Direccion"><br>
+            
+
+
+        </div>
+
+    </div>
+</div>
+<div class="container  my-5 ">
+    <div >
+       <center><input type="submit" id="botonregistara"></center> 
+</div>
+<main role="main" class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <H1 class="text-center">DATOS</H1>
+      <div class="table-responsive">
+        <table class="table table-bordered"  id="tblaRegistro">
+          <thead>
+              <tr>
+                  <th>nombre</th>
+                  <th>Apellido</th>
+                  <th>Nacionalidad</th>
+                  <th>edad</th>
+                  <th>sexo</th>
+                  <th>Fecha de nacimiento</th>
+                  <th>correo electronico</th>
+                  <th>telefono fijo</th>
+                  <th>celular</th>
+                  <th>No. Identidad</th>
+                  <th>direccion</th>
+                  
+                  
+               </tr>
+          </thead>
+          <tbody>
+              
+          </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-md-6">
+              <h6 class="text-muted lead">CONTACTO:</h6>
+              <h6 class="text-muted">
+                Cra. 65 #185 - 86 Barrio ketimporta<br>
+                Barranquilla, Atlántico.<br>
+                Teléfono: +57 301 588 9364<br>
+                Correo: elcampo@gmail.com
+              </h6>
+          </div>
+          <div class="col-xs-12 col-md-6">
+          <div class="pull-right">
+          <h6 class="text-muted lead">DIAS QUE ABRIMOS :D</h6>
+                <div class="text-muted">
+                    <a>LUNES, </a>
+                    <a>MARTES, </a>
+                    <a>MIERCOLES, </a>
+                    <a>JUEVES, </a>
+                    <a>VIERNES, </a>
+                    <a>DE 8AM A 8PM</a>
+                </div>
+          </div>
+          <div class="row"> <p class="text-muted small text-right">Juan Vergara Y Emmanuel Garzon, El Campo @2020.<br> Todos los derechos reservados.</p></div>
+      </div>
+    </div>  
+  </div>
+  </footer>
+    
+        
+
+
+
+      
+<script src="../js/tablaRegistrocontac.js"></script>
+<script src="../js/guardar_registro.js"></script>    
+<script src="../js/usuario_mos.js"></script>
+<script src="../js/selectcontactenos.js"></script>    
+</body>
+</html>
